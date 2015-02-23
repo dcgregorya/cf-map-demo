@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Map Drawing Demonstration Page</title>
+	</head>
+	<body>
+		<div id="container">
+			
+		</div>
+
+		<script src="js/kinetic-v5.1.0.js"></script>
+		<script type="text/javascript">
+			var stage = new Kinetic.Stage({
+				container: "container",
+				width: 800,
+				height: 600
+			});
+
+			var layer = new Kinetic.Layer();
+
+			var rect = new Kinetic.Rect({
+				x:40,
+				y:40,
+				width: 30,
+				height: 30,
+				offset: {x:0, y:0},
+				fill: '#eeeeee',
+				stroke: 'black',
+				strokeWidth: 1
+			});
+
+			layer.add(rect);
+			stage.add(layer);
+
+		</script>
+	</body>
+</html>
